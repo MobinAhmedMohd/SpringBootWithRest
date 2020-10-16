@@ -16,9 +16,12 @@ import com.mars.dao.Address;
 import com.mars.dao.Person;
 import com.mars.main.ApplicationMain;
 
+import lombok.extern.slf4j.Slf4j;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = {ApplicationMain.class})
 @AutoConfigurationPackage
+@Slf4j
 public class PersonTests {
 
 	@Autowired
@@ -27,13 +30,18 @@ public class PersonTests {
 	@Autowired
 	AddressController addressController;
 	
+	
+	
+	
 	Integer personId = 0;
 	Integer addressId = 0;
+	
 	
 	@Test
 	public void testAll() {
 		testAddingPerson();
 		testAddingAddressToPerson();
+		testEditPerson();
 		testEditAddress();
 		testDeleteAddress();
 		testDeletePerson();
@@ -44,7 +52,7 @@ public class PersonTests {
 		personObj.setFirstName("Mars");
 		personObj.setLastName("Compary");
 		personObj = personController.addPerson(personObj);
-		System.out.println("PERSON DETAILS ADDED: PERSON ID:: "+personObj.getId());
+		log.info("PERSON DETAILS ADDED: PERSON ID:: "+personObj.getId());
 		personId = personObj.getId();
 	}
 	
@@ -71,7 +79,13 @@ public class PersonTests {
 		addresses.add(addressObj2);
 		
 		personObj.setAddresses(addresses);
-		System.out.println(personController.addAddressToPerson(personObj, personId));
+		log.info(personController.addAddressToPerson(personObj, personId));
+	}
+	
+	public void testEditPerson() {
+		Person personObj = personController.getPersonsOnId(personId);
+		personObj.setFirstName("EDIT TEST");
+		log.info(personController.editPerson(personObj, personId));
 	}
 	
 	public void testEditAddress() {
@@ -80,14 +94,14 @@ public class PersonTests {
 		Address address1 = address.get(0);
 		addressId = address1.getId();
 		address1.setCity("Secundrabad");
-		System.out.println(addressController.editAddress(address1, addressId));
+		log.info(addressController.editAddress(address1, addressId));
 	}
 	
 	public void testDeleteAddress() {
-		System.out.println(addressController.deleteAddress(addressId));
+		log.info(addressController.deleteAddress(addressId));
 	}
 	
 	public void testDeletePerson() {
-		System.out.println(personController.deletePerson(personId));
+		log.info(personController.deletePerson(personId));
 	}
 }

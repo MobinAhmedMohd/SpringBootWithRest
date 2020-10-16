@@ -38,7 +38,6 @@ public class PersonServiceImpl implements PersonService {
 
 	@Override
 	public Person getPersonOnId(Integer personId) {
-		// TODO Auto-generated method stub
 		return personRepository.findOne(personId);
 	}
 

@@ -57,7 +57,7 @@ public class PersonController {
 					retStatement = "PERSON ID NOT FOUND";
 				}else {
 					personService.createOrupdatePerson(person);
-					retStatement = "SUCESSFULLY EDIT";
+					retStatement = "SUCESSFULLY EDIT PERSON DETAILS";
 				}
 			}else {
 				retStatement = "NOT EDITED. MAY BE BODY PERSON_ID AND PARAMETER PERSON_ID NOT MATCHING";

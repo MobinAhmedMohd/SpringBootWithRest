@@ -43,7 +43,6 @@ public class SpringConfigurationLocal {
 
 	    HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
 	    em.setJpaVendorAdapter(vendorAdapter);
-	    //set up the hibernate properties
 	    Map<String, String> hibernateMap = Maps.newHashMap();
 	    hibernateMap.put("physical_naming_strategy", "org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy");
 	    hibernateMap.put("implicit_naming_strategy", "org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy");
