@@ -1,13 +1,13 @@
-package com.mars.dao.service.impl;
+package com.springboot.service.impl;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.mars.dao.Address;
-import com.mars.dao.repositories.AddressRepository;
-import com.mars.dao.service.AddressService;
+import com.springboot.dao.Address;
+import com.springboot.dao.repositories.AddressRepository;
+import com.springboot.service.AddressService;
 
 @Service
 public class AddressServiceImpl implements AddressService {

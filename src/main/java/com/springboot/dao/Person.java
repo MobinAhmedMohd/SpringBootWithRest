@@ -1,4 +1,4 @@
-package com.mars.dao;
+package com.springboot.dao;
 
 import java.util.List;
 

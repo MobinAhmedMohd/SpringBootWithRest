@@ -1,4 +1,4 @@
-package com.mars.config;
+package com.springboot.config;
 
 import java.util.Map;
 

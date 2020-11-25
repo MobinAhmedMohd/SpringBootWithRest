@@ -1,4 +1,4 @@
-package com.mars.main;
+package com.springboot.main;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,7 +10,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 @EnableScheduling
 @EnableSwagger2
-@ComponentScan(basePackages = {"com.mars"})
+@ComponentScan(basePackages = {"com.springboot"})
 public class ApplicationMain {
 
 	public static void main(String[] args) {

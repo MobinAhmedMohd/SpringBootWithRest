@@ -1,14 +1,14 @@
-package com.mars.dao.service.impl;
+package com.springboot.service.impl;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.mars.dao.Address;
-import com.mars.dao.Person;
-import com.mars.dao.repositories.PersonRepository;
-import com.mars.dao.service.PersonService;
+import com.springboot.dao.Address;
+import com.springboot.dao.Person;
+import com.springboot.dao.repositories.PersonRepository;
+import com.springboot.service.PersonService;
 
 @Service
 public class PersonServiceImpl implements PersonService {

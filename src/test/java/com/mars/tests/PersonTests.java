@@ -10,11 +10,11 @@ import org.springframework.boot.autoconfigure.AutoConfigurationPackage;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.mars.controllers.AddressController;
-import com.mars.controllers.PersonController;
-import com.mars.dao.Address;
-import com.mars.dao.Person;
-import com.mars.main.ApplicationMain;
+import com.springboot.controllers.AddressController;
+import com.springboot.controllers.PersonController;
+import com.springboot.dao.Address;
+import com.springboot.dao.Person;
+import com.springboot.main.ApplicationMain;
 
 import lombok.extern.slf4j.Slf4j;
 

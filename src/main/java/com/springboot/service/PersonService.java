@@ -1,8 +1,8 @@
-package com.mars.dao.service;
+package com.springboot.service;
 
 import java.util.List;
 
-import com.mars.dao.Person;
+import com.springboot.dao.Person;
 
 public interface PersonService {
 

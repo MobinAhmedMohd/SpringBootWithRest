@@ -1,4 +1,4 @@
-package com.mars.controllers;
+package com.springboot.controllers;
 
 import java.util.List;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.mars.dao.Person;
-import com.mars.dao.service.PersonService;
+import com.springboot.dao.Person;
+import com.springboot.service.PersonService;
 
 @RestController
 @Service

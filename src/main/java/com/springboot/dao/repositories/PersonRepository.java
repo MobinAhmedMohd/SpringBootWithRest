@@ -1,11 +1,11 @@
-package com.mars.dao.repositories;
+package com.springboot.dao.repositories;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import com.mars.dao.Person;
+import com.springboot.dao.Person;
 
 public interface PersonRepository extends JpaRepository<Person, Integer> {
 

@@ -1,4 +1,4 @@
-package com.mars.config;
+package com.springboot.config;
 
 import java.util.Map;
 
@@ -21,9 +21,9 @@ import org.springframework.transaction.PlatformTransactionManager;
 import com.google.common.collect.Maps;
 
 @Configuration
-@ComponentScan(basePackages = "com.mars.dao")
+@ComponentScan(basePackages = "com.springboot.dao")
 @EnableJpaRepositories(
-    basePackages = "com.mars.dao.repositories",
+    basePackages = "com.springboot.dao.repositories",
     entityManagerFactoryRef = "entityManagerFactory"
 )
 @EnableAspectJAutoProxy
@@ -39,7 +39,7 @@ public class SpringConfigurationLocal {
 	    DataSourcePropertyConfig masterConfig = masterDatasourceConfig();
 	    LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
 	    em.setDataSource(dataSource(masterConfig));
-	    em.setPackagesToScan(new String[]{"com.mars.dao"});
+	    em.setPackagesToScan(new String[]{"com.springboot.dao"});
 
 	    HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
 	    em.setJpaVendorAdapter(vendorAdapter);
