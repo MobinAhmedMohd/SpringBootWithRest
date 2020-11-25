@@ -1,5 +1,5 @@
 Here is the code added for SpringBoot Test
-1. I have used spring boot application and added REST apis for adding eding person and address data.
+1. I have used spring boot application and added REST apis for adding editing person and address data.
 2. I have also added Swagger2 implementation on this.
 3. For Database, I have used Mysql database in local. I have also added database script file in project.
 4. Added Testcases for testing add person, edit person, add addresses, edit address, delete person and delete address cases. 
